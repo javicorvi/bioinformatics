@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>2066267</Count><RetMax>20</RetMax><RetStart>0</RetStart><IdList>
+<Id>1068647189</Id>
+<Id>1068647086</Id>
+<Id>1068636322</Id>
+<Id>1068635995</Id>
+<Id>1068614968</Id>
+<Id>1068607114</Id>
+<Id>1068607092</Id>
+<Id>1068607090</Id>
+<Id>1068607068</Id>
+<Id>1068607056</Id>
+<Id>1068593947</Id>
+<Id>1068570591</Id>
+<Id>1068519690</Id>
+<Id>1068518595</Id>
+<Id>1068516378</Id>
+<Id>1068492413</Id>
+<Id>1068465036</Id>
+<Id>1068359729</Id>
+<Id>1064289457</Id>
+<Id>1064289456</Id>
+</IdList><TranslationSet/><TranslationStack>   <TermSet>    <Term>complete sequence[Title]</Term>    <Field>Title</Field>    <Count>2066286</Count>    <Explode>N</Explode>   </TermSet>   <TermSet>    <Term>rna[Title]</Term>    <Field>Title</Field>    <Count>61061261</Count>    <Explode>N</Explode>   </TermSet>   <TermSet>    <Term>plasmid[Title]</Term>    <Field>Title</Field>    <Count>44887</Count>    <Explode>N</Explode>   </TermSet>   <OP>AND</OP>   <OP>GROUP</OP>   <OP>NOT</OP>  </TranslationStack><QueryTranslation>complete sequence[Title] NOT (rna[Title] AND plasmid[Title])</QueryTranslation></eSearchResult>

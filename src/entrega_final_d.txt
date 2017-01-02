@@ -1,0 +1,33 @@
+dustmasker -in ejercicio_c.fasta -outfmt fasta -out ejercicio_c_mask.fasta 
+dustmasker -in ejercicio_c.fasta -outfmt maskinfo_asn1_bin -out ejercicio_c.mask.asnb
+makeblastdb -in ejercicio_c.fasta -mask_data ejercicio_c.mask.asnb -out ejercicio_d.db -dbtype=nucl
+
+
+Respuesta:
+Building a new DB, current time: 09/22/2016 01:42:38
+New DB name:   /home/javi/workspace_bioinformatica/MyFirstPython/src/ejercicio_d.db
+New DB title:  ejercicio_c.fasta
+Sequence type: Nucleotide
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Mask file: ejercicio_c.mask.asnb
+Adding sequences from FASTA; added 1 sequences in 0.0127468 seconds.
+
+blastdbcmd -db ejercicio_d.db -info
+
+Respuesta
+
+Database: ejercicio_c.fasta
+	1 sequences; 486,474 total bases
+
+Date: Sep 22, 2016  1:46 AM	Longest sequence: 486,474 bases
+
+Available filtering algorithms applied to database sequences:
+
+Algorithm ID  Algorithm name      Algorithm options                       
+11            dust                window=64; level=20; linker=1           
+
+Volumes:
+	/home/javi/workspace_bioinformatica/MyFirstPython/src/ejercicio_d.db
+
